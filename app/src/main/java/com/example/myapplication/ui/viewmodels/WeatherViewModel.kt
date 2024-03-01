@@ -1,6 +1,9 @@
 package com.example.myapplication.ui.viewmodels
 
 // WeatherViewModel.kt
+import android.location.Location
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.myapplication.data.repository.WeatherRepository
@@ -16,3 +19,5 @@ class WeatherViewModel(private val repository: WeatherRepository) : ViewModel() 
         }
     }
 }
+
+
